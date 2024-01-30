@@ -36,7 +36,7 @@ const AboutMe = () => {
 
   return (
     <section className="w-full relative h-screen" ref={aboutRef}>
-      <div className="container mx-auto md:py-40 py-20 px-8 md:px-0">
+      <div className="container mx-auto md:py-40 h-full py-20 px-8 md:px-0">
         <div className="flex w-full justify-between md:flex-row flex-col">
           <div className="flex flex-col md:w-[50%] w-full z-20" ref={descRef}>
             <div className="flex flex-col gap-y-12">
@@ -88,7 +88,7 @@ const AboutMe = () => {
               Download CV
             </motion.button>
           </div>
-          <div className="md:w-[50%] w-full flex justify-center md:relative absolute z-10 bottom-0">
+          <div className="md:w-[50%] w-full flex justify-center relative z-10">
             <motion.div
               initial={{
                 opacity: 0,
@@ -102,11 +102,11 @@ const AboutMe = () => {
               viewport={{
                 once: true,
               }}
-              className="transparent-img overflow-hidden md:h-[500px] mt-16"
+              className="transparent-img overflow-hidden md:h-[500px] md:w-auto w-[250px] h-[250px] md:rounded-none rounded-[50%] mt-16"
               ref={imageRef}
             >
               <Image
-                className="md:mr-40"
+                className="md:mr-40 absolute left-[50%] translate-x-[-50%] md:relative md:left-0 md:translate-x-0"
                 src={MyImg}
                 width={isMobile ? 200 : 300}
                 height={isMobile ? 300 : 400}

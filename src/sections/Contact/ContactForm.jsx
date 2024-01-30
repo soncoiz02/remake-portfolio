@@ -5,7 +5,7 @@ const ContactForm = ({ formRef }) => {
     <motion.form
       initial={{ y: "50%" }}
       ref={formRef}
-      className="flex flex-col gap-y-4 mt-8 w-[80%]"
+      className="flex flex-col gap-y-4 mt-8 md:w-[80%] w-full"
     >
       <input
         type="text"

@@ -24,7 +24,7 @@ const Skill = () => {
 
   return (
     <section id="skills" className="w-full relative overflow-hidden">
-      <div className="container mx-auto py-20 px-8 md:px-0">
+      <div className="container mx-auto md:pt-20 pt-10 pb-20 px-8 md:px-0">
         <div className="flex flex-col items-center w-full" ref={skillRef}>
           <div className="flex flex-col items-center w-[300px] gap-y-4">
             <h2 className="text-3xl text-main-yellow uppercase tracking-tighter-[1.5px] font-medium">

@@ -11,6 +11,7 @@ const Project = () => {
   const projectRef = useRef();
 
   useEffect(() => {
+    const amountToScroll = projectRef.current.offsetWidth - window.innerWidth;
     let prjSet = gsap.utils.toArray(".project-item");
     let to = gsap.to(prjSet, {
       xPercent: () => -100 * (prjSet.length - 1),
@@ -20,8 +21,9 @@ const Project = () => {
         pin: true,
         pinSpacing: true,
         scrub: 1,
-        end: () => "+=" + window.innerWidth,
+        end: () => "+=" + amountToScroll,
         snap: 1 / (prjSet.length - 1),
+        markers: true,
       },
     });
 
@@ -35,7 +37,13 @@ const Project = () => {
       className="w-full relative bg-white h-screen overflow-hidden"
       ref={scroller}
     >
-      <div className={"overflow-x-hidden relative flex w-[300vw]"}>
+      <div
+        className={"overflow-x-hidden relative flex"}
+        style={{
+          width: projectData.length * 100 + "vw",
+        }}
+        ref={projectRef}
+      >
         {projectData.map((item, index) => (
           <ListProject projectData={item} key={index} />
         ))}

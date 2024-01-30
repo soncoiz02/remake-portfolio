@@ -18,7 +18,7 @@ const Contact = () => {
   }, []);
   return (
     <section id="contact" className="relative w-full h-screen" ref={sectionRef}>
-      <div className="container mx-auto py-20">
+      <div className="container mx-auto py-20 px-8 md:px-0">
         <div className="flex w-full">
           <div className="flex flex-col md:w-[50%] w-full">
             <div className="flex flex-col">
