@@ -90,7 +90,7 @@ const Hero = () => {
             opacity: 0,
           }}
           animate={{
-            x: isMobile ? [0, -150] : [0, -100, -300],
+            x: isMobile ? [0, 100] : [0, -100, -300],
             y: isMobile ? [0, -160] : [0, -60, -250],
             opacity: [0, 1],
           }}
@@ -107,8 +107,8 @@ const Hero = () => {
             opacity: 0,
           }}
           animate={{
-            x: isMobile ? [0, 100] : [0, 200, 400],
-            y: isMobile ? [0, 150] : [0, -100, -300],
+            x: isMobile ? [0, 50] : [0, 200, 400],
+            y: isMobile ? [0, 280] : [0, -100, -300],
             opacity: [0, 1],
           }}
           transition={{
@@ -124,8 +124,8 @@ const Hero = () => {
             opacity: 0,
           }}
           animate={{
-            x: isMobile ? [0, -100] : [0, 160, 650],
-            y: isMobile ? [0, -350] : [0, 60, 200],
+            x: isMobile ? [0, -30] : [0, 160, 650],
+            y: isMobile ? [0, -400] : [0, 60, 200],
             opacity: [0, 1],
           }}
           transition={{

@@ -30,7 +30,7 @@ const MainGlobe = () => {
   return (
     <div
       ref={globeRef}
-      className="flex items-center translate-x-[-50%] translate-y-[-50%] md:top-[50%] top-[30%] md:left-[55%] left-[85%] justify-center absolute z-[1]"
+      className="flex items-center md:translate-x-[-50%] translate-y-[-50%] md:top-[50%] top-[30%] md:left-[55%] justify-center absolute z-[1]"
     >
       <motion.div
         initial={{
