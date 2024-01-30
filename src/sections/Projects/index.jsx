@@ -23,7 +23,6 @@ const Project = () => {
         scrub: 1,
         end: () => "+=" + amountToScroll,
         snap: 1 / (prjSet.length - 1),
-        markers: true,
       },
     });
 
