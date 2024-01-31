@@ -14,6 +14,7 @@ const ListProject = ({ projectData }) => {
             width={isMobile ? "100%" : 800}
             height={600}
             alt={projectData.name}
+            className="rounded-xl"
           />
           <p className="md:text-[80px] text-[40px] text-[#3d4364] font-bold md:absolute relative md:-bottom-[16] md:-left-[30%]">
             {projectData.name}
@@ -23,7 +24,9 @@ const ListProject = ({ projectData }) => {
           <p className=" text-main-gray text-base">Developer</p>
           <div className="w-10 h-[1px] bg-main-gray"></div>
         </div>
-        <p className="text-lg font-medium text-main-gray italic">06/2022</p>
+        <p className="text-lg font-medium text-main-gray italic">
+          {projectData.date}
+        </p>
         <Link
           href={projectData.link}
           className="text-base hover:underline text-main-yellow mt-2"

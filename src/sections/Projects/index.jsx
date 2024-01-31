@@ -1,10 +1,8 @@
-import GlowLine from "@/components/GlowLine";
 import ListProject from "./ListProject";
 import { projectData } from "./data";
 
-import { motion } from "framer-motion";
-import { useEffect, useRef } from "react";
 import gsap from "gsap";
+import { useEffect, useRef } from "react";
 
 const Project = () => {
   const scroller = useRef();

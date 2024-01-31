@@ -67,7 +67,7 @@ const AboutMe = () => {
                 supportive and growing environment.
               </motion.p>
             </div>
-            <motion.button
+            <motion.a
               initial={{
                 x: -150,
                 opacity: 0,
@@ -83,10 +83,12 @@ const AboutMe = () => {
               viewport={{
                 once: true,
               }}
+              href="../../assets/myCv.pdf"
+              download="FRONTEND_CV_TRAN_BAO_SON"
               className="cursor-pointer font-medium md:text-2xl text-lg tracking-tighter-[1.25px] text-white px-12 py-4 rounded-xl button-linear self-start md:mt-16 mt-8"
             >
               Download CV
-            </motion.button>
+            </motion.a>
           </div>
           <div className="md:w-[50%] w-full flex justify-center relative z-10">
             <motion.div
